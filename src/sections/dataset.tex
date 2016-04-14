@@ -1,1 +1,32 @@
 \section{Dataset}
+\begin{table}
+\centering
+%Overall
+%Twitter 647
+%FB 21190
+%FB(Other) 23098
+%SMS 42551
+\caption{Dataset Composition by Message Type}
+\begin{tabular}{| c | c |}
+\hline
+\textbf{Data Type} & \textbf{Count} \\
+\hline
+SMS & 42551\\
+\hline
+Facebook & 21190\\
+\hline
+Facebook(Other) & 23098\\
+\hline
+Twitter & 647\\
+\hline
+\end{tabular}
+\label{table:datasetCompositionMsgT}
+\end{table}
+As mentioned in the previous section, we collect data from several sources. 
+In particular, Facebook offered the widest variety \emph{viz.} messages, likes, status updates, and comments. 
+We separate this in two groups, one containing the messages(Facebook), the other containing the rest of the Facebook data( Facebook(Other)). 
+Similarly for Twitter, we created a single group containing the Twitter messages, and the status updates. 
+The distribution of the collected data is shown in Table \ref{table:datasetCompositionMsgT}. 
+The largest fraction came from the text messaging (SMS), followed by Facebook, and finally Twitter. 
+For this work we only focus on the text messaging, and the Facebook message data. 
+
