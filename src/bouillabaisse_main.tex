@@ -3,6 +3,7 @@
 \usepackage{cite}
 \usepackage{graphicx}
 \usepackage{subfigure}
+\usepackage[boxed]{algorithm2e}
 \graphicspath{{./figures/}}
 
 \begin{document}
@@ -12,15 +13,24 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Syed Shabih Hasan$^\ddagger$, Octav Chipara$^{\ddagger\dagger}$}
-\IEEEauthorblockA{$^\ddagger$Dept. of Computer Science, $^\dagger$Aging Mind and Brain Initiative\\
+\author{\IEEEauthorblockN{Syed Shabih Hasan$^\ddagger$, Tom Werner$^\ddagger$,\\
+ Michael M. Clapp$^\ddagger$, Octav Chipara$^{\ddagger\dagger}$}
+\IEEEauthorblockA{$^\ddagger$Dept. of Computer Science, \\
+$^\dagger$Aging Mind and Brain Initiative\\
 University of Iowa\\
-\{\textit{syedshabih-hasan, octav-chipara}\}@uiowa.edu}
+\{\textit{syedshabih-hasan, tom-werner} \\
+\textit{michael-clapp, octav-chipara}\}@uiowa.edu}
+\and
+\IEEEauthorblockN{Emma Beauchamp}
+\IEEEauthorblockA{Dept. of Statistics?\\
+Smith College\\
+\textit{ebeaucha}@smith.edu}
 \and
 \IEEEauthorblockN{Anthony Paik}
 \IEEEauthorblockA{Dept. of Sociology\\
 University of Massachusetts-Amherst\\
 \textit{apaik}@soc.umass.edu}
+
 }
 % make the title area
 \maketitle
@@ -34,13 +44,14 @@ The abstract goes here.
 % no keywords
 \IEEEpeerreviewmaketitle
 \input{sections/intro}
-I am going to do a test cite \cite{test123:a}.
 \input{sections/related}
 \input{sections/study}
 \input{sections/dataset}
 \input{sections/balancestatus}
-\input{sections/results}
 \input{sections/conclusion}
+\section*{Acknowledgements}
+This work was supported by the National Institute of Justice (NIJ) through award number 2013-IJ-CX-0030, and the Roy J. Carver Charitable Trust though grant number 14-4355. 
+The contents of this paper do not necessarily represent the policy of NIJ, and the reader should not assume endorsement by the Federal Government. 
 
 \bibliographystyle{IEEEtran}
 \bibliography{sections/biblio}
